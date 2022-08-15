@@ -1,5 +1,11 @@
-[![Build Status][nlassert-travis-svg]][nlassert-travis]
+[![Build Status][nlassert-github-action-svg]][nlassert-github-action]
 [![Coverage Status][nlassert-codecov-svg]][nlassert-codecov]
+
+[nlassert-github]: https://github.com/nuovations/nlassert
+[nlassert-github-action]: https://github.com/nuovations/nlassert/actions?query=workflow%3Abuild+branch%3Amaster+event%3Apush
+[nlassert-github-action-svg]: https://github.com/nuovations/nlassert/actions/workflows/build.yml/badge.svg?branch=master&event=push
+[nlassert-codecov]: https://codecov.io/gh/nestlabs/nlassert
+[nlassert-codecov-svg]: https://codecov.io/gh/nestlabs/nlassert/branch/master/graph/badge.svg
 
 Nest Labs Assert
 ================
@@ -50,11 +56,6 @@ below and are described in detail in the following sections.
 The compile-time modality interfaces in this package are simpler and
 come in a single family with a couple of styles and variants, all
 intended to provide parallelism with the run-time interfaces.
-
-[nlassert-travis]: https://travis-ci.com/nestlabs/nlassert
-[nlassert-travis-svg]: https://travis-ci.com/nestlabs/nlassert.svg?branch=master
-[nlassert-codecov]: https://codecov.io/gh/nestlabs/nlassert
-[nlassert-codecov-svg]: https://codecov.io/gh/nestlabs/nlassert/branch/master/graph/badge.svg
 
 # Interact
 
