@@ -121,7 +121,7 @@ static void nlassert_test_trap(void);
 
 #define NL_ASSERT_LOG(aPrefix, aName, aCondition, aLabel, aFile, aLine, aMessage)         \
     do {                                                                                  \
-        nlassert_test_log(NL_ASSERT_LOG_FORMAT_DEFAULT,                                   \
+        nlassert_test_log(NL_ASSERT_LOG_FORMAT_DEFAULT "\n",                              \
                           aPrefix,                                                        \
                           (((aName) == 0) || (*(aName) == '\0')) ? "" : aName,            \
                           (((aName) == 0) || (*(aName) == '\0')) ? "" : ": ",             \
