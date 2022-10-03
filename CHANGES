@@ -1,3 +1,12 @@
+1.1.9 (2022-10-02)
+
+        * Moved the terminating newline in
+          NL_ASSERT_LOG_FORMAT_DEFAULT to NL_ASSERT_LOG_DEFAULT such
+          that the former can be reused, as-is in other logging
+          systems that already have their own, internal terminating
+          newline while preserving the existing behavior of
+          NL_ASSERT_LOG_DEFAULT.
+
 1.1.8 (2020-05-11)
 
         * Updated to nlbuild-autotools 1.7.3.
