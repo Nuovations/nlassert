@@ -1094,7 +1094,7 @@
  *  @sa #NL_ASSERT_LOG_DEFAULT
  *
  */
-#define NL_ASSERT_LOG_FORMAT_DEFAULT                           "%s%s%s%s, %s%sfile: %s, line: %d\n"
+#define NL_ASSERT_LOG_FORMAT_DEFAULT                           "%s%s%s%s, %s%sfile: %s, line: %d"
 
 /**
  *  @def NL_ASSERT_LOG_DEFAULT(aPrefix, aName, aCondition, aLabel, aFile, aLine, aMessage)
@@ -1160,7 +1160,7 @@
     do                                                                                    \
     {                                                                                     \
         fprintf(stderr,                                                                   \
-                NL_ASSERT_LOG_FORMAT_DEFAULT,                                             \
+                NL_ASSERT_LOG_FORMAT_DEFAULT "\n",                                        \
                 aPrefix,                                                                  \
                 (((aName) == 0) || (*(aName) == '\0')) ? "" : aName,                      \
                 (((aName) == 0) || (*(aName) == '\0')) ? "" : ": ",                       \
